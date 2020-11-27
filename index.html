@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Lunisolar</title>
+    <script language="JavaScript" src="qreki.js"></script>
+    <STYLE type="text/css">
+    <!--
+    A {text-decoration:none;font-size:9pt}
+    TD {font-size:9pt}
+    //-->
+    </STYLE>
+</head>
+<body>
+
+<h2>
+    <p style="margin-top: 20px;">Timezone, Sun, Moon and Tide</p>
+</h2>
+<p>
+    <script language="JavaScript">
+    <!--
+      var mcont = 1;	//正午月齢(1)、現在時刻月齢(0)の指定
+      dt=new Date();
+      yy=dt.getYear(); if (yy < 2000) yy = yy + 1900;
+      mm=dt.getMonth()+1;
+      dd=dt.getDate();
+      ww=dt.getDay();
+      kr = new kyureki(dt.getJD());
+      kr.moon0 = kr.day-1;
+    //-->
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="lunisolar.js">
+    </script>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Not Found</title>
+<link rel="shortcut icon" href="/labyrinthenoir.ico">
+<link href="error.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="maintitle">
+<h1>404</h1>
+<h2>Not Found</h2>
+<h3>&gt;&gt; 未検出 &lt;&lt;</h3>
+<p>ファイルが見つからないか、<br>
+	アクセス権がない。</p>
+<p><a href="http://www.shurey.com/">www.shurey.com</a></p>
+</div>
+</body>
+</html>
