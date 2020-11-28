@@ -46,17 +46,17 @@ let sunX, moonX;
       noStroke(); //ストローク無効化
       let hh=(i+13+h+n)%24;     // localtime @ i 
       switch(parseInt(hh/6)){
-        case 0: // dawn
-          fill(0, (hh)*20, (hh)*20, 128);  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
+        case 0: // dawn, 0 - 5
+          fill(32, 50+25*(6-hh));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
           break;
-        case 1: // morning
-          fill((hh-6)*40,100,180, 128);  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
+        case 1: // morning, 6-11
+          fill(0xed, 0x70, 0x14, 50+25*(12-hh));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
           break;
-        case 2: // afternoon
-          fill((18-hh)*40,100,180, 128);  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
+        case 2: // afternoon, 12-17
+          fill(0xed, 0x70, 0x14, 50+25*(hh-12));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
           break;
-        case 3: // eve
-          fill(0, (23-hh)*20, (23-hh)*20, 128);  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
+        case 3: // eve, 18-23
+          fill(32, 50+25*(hh-18));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
           break;
 
       }
