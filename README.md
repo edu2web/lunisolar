@@ -2,6 +2,8 @@
 
 A javascript code to display Timezone, Sun, Moon and Tide
 
+Move the mouse to change the display time.
+
 ## Demo on my github pages
 https://edu2web.github.io/lunisolar/
 
