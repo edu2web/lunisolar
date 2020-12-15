@@ -50,10 +50,10 @@ let sunX, moonX;
           fill(32, 50+25*(6-hh));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
           break;
         case 1: // morning, 6-11
-          fill(0xed, 0x70, 0x14, 50+25*(12-hh));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
+          fill(0xed, 0x70, 0x14, 50+30*(12-hh));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
           break;
         case 2: // afternoon, 12-17
-          fill(0xed, 0x70, 0x14, 50+25*(hh-12));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
+          fill(0xed, 0x70, 0x14, 50+30*(hh-12));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
           break;
         case 3: // eve, 18-23
           fill(32, 50+25*(hh-18));  //図形の塗り潰し: RGB値に加え、不透明度 128 を指定
@@ -91,7 +91,7 @@ let sunX, moonX;
 
     sunX = stripe_left+(24 -mk24(sh+n))*stripe_width+2;     
     fill( 255, 255, 255, 58 );
-    ellipse( sunX, 380, 380, 380 );     // sun ring
+    ellipse( sunX, 380, 610, 530 );     // sun ring
   
     // 通常の不透明な色
     fill( "White" ); 
